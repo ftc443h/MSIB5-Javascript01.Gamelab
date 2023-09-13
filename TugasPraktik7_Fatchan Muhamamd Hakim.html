@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatchan Muhammad Hakim</title>
+
+</head>
+
+<body>
+
+        <script>
+
+            // Start Function dari bilangan kelipatan 3, 6, 5, 9, 10, 15
+            function convertNumber(number) {
+                if (number % 15 === 0) {
+                    return "gamelab indonesia";
+                } else if (number % 3 === 2 || number % 5 === 0) {
+                    return "gamelab";
+                } else {
+                    return "game";
+                }
+            }
+            // End Function dari bilangan kelipatan 3, 6, 5, 9, 10, 15
+
+            function DLSOutput(Loskm) {
+                let DKL = "";
+
+                for (let i = 1; i <= Loskm; i++) {
+                    DKL += convertNumber(i) + " ";
+                }
+                return DKL;
+            }
+
+            const test1 = DLSOutput(10);
+            const test2 = DLSOutput(16);
+            const test3 = DLSOutput(20);
+
+            console.log("Hasil uji pertama adalah");
+            console.log(test1);
+            console.log("Hasil uji kedua adalah");
+            console.log(test2); 
+            console.log("Hasil uji Ketiga adalah");
+            console.log(test3); 
+
+        </script>
+        
+</body>
+
+</html>
